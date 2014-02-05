@@ -9,7 +9,7 @@
 		<version>2.0.0-SNAPSHOT</version>
 	</parent>
 	<artifactId>seava.whj.web.jee</artifactId>
-	<name>WHJ - Web for JEE</name>
+	<name>WHJ - Web host for JEE</name>
 	<description>Main web host to run under standard JEE web server</description>
 	<packaging>war</packaging>
 	

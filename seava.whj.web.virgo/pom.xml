@@ -9,7 +9,7 @@
 		<version>2.0.0-SNAPSHOT</version>
 	</parent>
 	<artifactId>seava.whj.web.virgo</artifactId>
-	<name>WHJ - Web for Virgo</name>
+	<name>WHJ - Web host for Virgo</name>
 	<description>Main web host to run under Virgo web server</description>
 	<packaging>jar</packaging>
 	
