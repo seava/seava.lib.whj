@@ -34,11 +34,16 @@
 			access="ROLE_CONNECT" />
 	</security:http>
 
+	<bean id="securityAuthenticationClientUserProvider" class="org.springframework.security.authentication.dao.DaoAuthenticationProvider">
+	    <property name="hideUserNotFoundExceptions" value="false" />
+	    <property name="userDetailsService" ref="securityAuthenticationClientUserService"/>
+	</bean>
+
 	<security:authentication-manager alias="authenticationManager">
 		<security:authentication-provider
-			user-service-ref="securityAuthenticationSystemUserService" />
-		<security:authentication-provider
-			user-service-ref="securityAuthenticationClientUserService" />
+			user-service-ref="securityAuthenticationSystemUserService"  />
+		<security:authentication-provider			
+			ref="securityAuthenticationClientUserProvider"/> 
 	</security:authentication-manager>
 
 	<bean class="ro.seava.j4e.commons.security.LoginParams" scope="prototype" />
