@@ -43,6 +43,23 @@
 	<!-- ============== SERVLET ================ -->
 
 	<servlet>
+		<servlet-name>statics</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+
+		<init-param>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>classpath:META-INF/spring/jee/ctrl/j4e-web-ctrl-statics-context.xml</param-value>
+		</init-param>
+
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>statics</servlet-name>
+		<url-pattern>/statics/*</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet>
 		<servlet-name>uiExtjs</servlet-name>
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
 		<init-param>
