@@ -5,11 +5,10 @@
 	<parent>
 		<groupId>ro.seava.commons</groupId>
 		<artifactId>seava.parent.oss</artifactId>
-		<version>2.0</version>
+		<version>2.0.0-SNAPSHOT</version>
 	</parent>
 	<groupId>ro.seava.lib.whj</groupId>
-	<artifactId>seava.whj</artifactId>
-	<version>2.0.0-SNAPSHOT</version>
+	<artifactId>whj</artifactId>
 	<name>Web Host Java</name>
 	<description>Java web host for business modules</description>
 	<packaging>pom</packaging>
@@ -24,7 +23,7 @@
 	<!-- ========================== Modules ========================== -->
 	
 	<modules>
-		<module>../seava.whj.web.jee</module>
-		<module>../seava.whj.web.virgo</module>
+		<module>../whj.web.jee</module>
+		<module>../whj.web.virgo</module>
 	</modules>
 </project>
